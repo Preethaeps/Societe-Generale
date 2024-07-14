@@ -80,5 +80,3 @@ vba-macro-analyzer/
 ├── static/
 │ └── styles.css # CSS file for styling the web interface
 └── README.md # Project documentation
-
-markdown
