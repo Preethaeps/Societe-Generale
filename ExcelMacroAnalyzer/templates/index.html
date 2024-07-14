@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Macro Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="fun-heading">Welcome to Excel Macro Analyzer!</h1>
+            <h2>Analyze your Excel files with VBA Macros quickly and easily</h2>
+        </header>
+        <div id="drop-area" class="drop-area">
+            <p>Drag & Drop your Excel file with VBA Macros here</p>
+            <button id="file-btn">Or select a file</button>
+            <input type="file" id="file-input" accept=".xlsm, .xlsx">
+        </div>
+        <div id="output" class="output"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

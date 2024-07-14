@@ -1,0 +1,113 @@
+/* Reset some default browser styles for a cleaner look */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set overall body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4c9aff, #1e5799, #2989d8, #207cca, #7db9e8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Keyframes for the background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Header styles */
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+header h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Fun heading styles */
+.fun-heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+/* Drop area styles */
+.drop-area {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 30px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.drop-area:hover {
+    background: #f1f1f1;
+}
+
+/* Hide the file input element */
+#file-input {
+    display: none;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Output area styles */
+.output {
+    margin-top: 20px;
+    text-align: left;
+    color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .drop-area {
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
